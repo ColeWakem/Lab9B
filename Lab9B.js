@@ -2,10 +2,11 @@ var age = prompt("How old are you?");
 console.log(age);
 
 var today = new Date();
-var todayYear = today.getYear();
-var yearBorn = todayYear - age;
-
+console.log(today);
+var todayYear = today.getFullYear();
 console.log(todayYear);
+var yearBorn = todayYear - age;
 console.log(yearBorn);
 
-document.getElementById("output").innerHTML = yearBorn;
+
+document.write(yearBorn);
